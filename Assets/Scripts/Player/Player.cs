@@ -67,7 +67,7 @@ public class Player : MonoBehaviour
         if (wallJumped)
         {
             rigidBody.velocity = new Vector3(-1 * rigidBody.velocity.x, jumpSpeed, 0);
-            acceleration *= -1;
+            moveX *= -1;
             wallJumped = false;
         }
     }
